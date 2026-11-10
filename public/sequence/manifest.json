@@ -1,0 +1,17 @@
+{
+  "source": "Frames fornecidos pelo usuário em Desktop/img-scroll",
+  "count": 71,
+  "inputBytes": 20531334,
+  "variants": {
+    "desktop": {
+      "width": 1280,
+      "height": 720,
+      "bytes": 892262
+    },
+    "mobile": {
+      "width": 768,
+      "height": 432,
+      "bytes": 341436
+    }
+  }
+}
