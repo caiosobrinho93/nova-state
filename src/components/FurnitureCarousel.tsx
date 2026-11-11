@@ -2,7 +2,7 @@ import { useCallback, useRef, useState } from "react";
 
 const projects = [
   {
-    image: "/moveis/IMG_0680-Salman-Moveis.jpeg",
+    image: "/moveis/IMG_0680-Salman-Moveis.webp",
     title: "Detalhes que fazem a diferença",
     description: "Marcenaria sob medida para viver melhor.",
     position: "center 58%",
@@ -95,7 +95,7 @@ export function FurnitureCarousel() {
               style={{ "--card-offset": offset } as React.CSSProperties}
               tabIndex={offset === 0 ? 0 : -1}
             >
-              <img src={project.image} alt={project.title} style={{ objectPosition: project.position }} loading={Math.abs(offset) < 2 ? "eager" : "lazy"} />
+              <img src={project.image} alt={project.title} style={{ objectPosition: project.position }} loading={Math.abs(offset) < 2 ? "eager" : "lazy"} decoding="async" />
               <div className="carousel-card-copy">
                 <h3>{project.title}</h3>
                 <p>{project.description}</p>

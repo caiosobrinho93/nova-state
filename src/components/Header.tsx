@@ -10,7 +10,7 @@ export function Header() {
 
   useEffect(() => {
     const onScroll = () =>
-      header.current?.classList.toggle("is-scrolled", window.scrollY > 24);
+      header.current?.classList.toggle("is-scrolled", window.scrollY >= 100);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
